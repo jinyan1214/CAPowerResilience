@@ -1,0 +1,4 @@
+carrier,damage_category,n_units,total_power_mw,new_power_mw,n_new,scenario
+4hr_battery_storage,battery_storage,57,1037.3956230310087,1037.3956230310087,50,aggressive
+8hr_battery_storage,battery_storage,198,3143.495143095464,3143.495143095464,194,aggressive
+battery,battery_storage,15,7839.1,0.0,0,aggressive
