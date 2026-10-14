@@ -1,0 +1,515 @@
+{
+  "RandomVariables": [],
+  "GeneralInformation": {
+    "AIM_id": "8021",
+    "location": {
+      "latitude": 37.783365,
+      "longitude": -122.411833
+    },
+    "Latitude": 37.783365,
+    "Longitude": -122.411833,
+    "HeightClass": "Low-Rise",
+    "DesignLevel": "High-Code",
+    "PlanArea": 23076.0,
+    "NumberOfStories": 3,
+    "YearBuilt": 1978,
+    "ReplacementCost": 3826318.0,
+    "StructureType": "S2",
+    "OccupancyClass": "RES3",
+    "Footprint": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-122.410927,37.783285],[-122.410993,37.783705],[-122.411038,37.783701],[-122.411046,37.783754],[-122.411013,37.783757],[-122.411058,37.784047],[-122.411531,37.784001],[-122.411527,37.783975],[-122.412476,37.783883],[-122.412429,37.783582],[-122.412418,37.783583],[-122.412346,37.783120],[-122.411968,37.783157],[-122.411998,37.783350],[-122.412130,37.783338],[-122.412122,37.783286],[-122.412196,37.783279],[-122.412207,37.783347],[-122.412019,37.783365],[-122.412048,37.783547],[-122.411926,37.783559],[-122.411869,37.783193],[-122.410927,37.783285]]]},\"properties\":{}}",
+    "units": {
+      "force": "kips",
+      "length": "ft",
+      "time": "sec"
+    }
+  },
+  "DefaultValues": {
+    "driverFile": "driver",
+    "edpFiles": [
+      "EDP.json"
+    ],
+    "filenameDL": "BIM.json",
+    "filenameEDP": "EDP.json",
+    "filenameEVENT": "EVENT.json",
+    "filenameSAM": "SAM.json",
+    "filenameSIM": "SIM.json",
+    "rvFiles": [
+      "SAM.json",
+      "EVENT.json",
+      "SIM.json"
+    ],
+    "workflowInput": "scInput.json",
+    "workflowOutput": "EDP.json"
+  },
+  "commonFileDir": "/Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/input_data",
+  "remoteAppDir": "/Applications/R2D.app/Contents/MacOS",
+  "localAppDir": "/Applications/R2D.app/Contents/MacOS",
+  "units": {
+    "force": "kips",
+    "length": "ft",
+    "time": "sec"
+  },
+  "outputs": {
+    "AIM": false,
+    "DM": true,
+    "DV": true,
+    "EDP": true,
+    "IM": false
+  },
+  "RegionalEvent": {
+    "eventFile": "EventGrid.csv",
+    "eventFilePath": "/Applications/R2D.app/Contents/MacOS/Examples/E1BasicHAZUS/input_data/San_Andreas_Mw72_filtered",
+    "units": {
+      "PGA": "g"
+    }
+  },
+  "assetType": "Buildings",
+  "Applications": {
+    "Events": [
+      {
+        "Application": "SimCenterEvent",
+        "ApplicationData": {},
+        "EventClassification": "Earthquake"
+      }
+    ],
+    "Modeling": {
+      "Application": "None",
+      "ApplicationData": {}
+    },
+    "Simulation": {
+      "Application": "IMasEDP",
+      "ApplicationData": {}
+    },
+    "UQ": {
+      "Application": "None",
+      "ApplicationData": {}
+    },
+    "DL": {
+      "Application": "Pelicun3",
+      "ApplicationData": {
+        "DL_Method": "Hazus Earthquake - Buildings",
+        "Realizations": 100,
+        "coupled_EDP": true,
+        "detailed_results": false,
+        "ground_failure": false,
+        "lifeline_facility": true,
+        "log_file": true,
+        "regional": "true"
+      }
+    }
+  },
+  "Modeling": {},
+  "Simulation": {
+    "type": "IMasEDP"
+  },
+  "UQ": {},
+  "DL": {},
+  "Events": [
+    {
+      "EventFolderPath": "/Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/input_data",
+      "Events": [
+        [
+          "Site_1644.csvx0x00000",
+          1.0
+        ],
+        [
+          "Site_1598.csvx1x00001",
+          1.0
+        ],
+        [
+          "Site_1599.csvx2x00002",
+          1.0
+        ],
+        [
+          "Site_1644.csvx3x00003",
+          1.0
+        ],
+        [
+          "Site_1644.csvx4x00004",
+          1.0
+        ],
+        [
+          "Site_1599.csvx5x00005",
+          1.0
+        ],
+        [
+          "Site_1644.csvx6x00006",
+          1.0
+        ],
+        [
+          "Site_1645.csvx7x00007",
+          1.0
+        ],
+        [
+          "Site_1645.csvx8x00008",
+          1.0
+        ],
+        [
+          "Site_1644.csvx9x00009",
+          1.0
+        ],
+        [
+          "Site_1644.csvx10x00010",
+          1.0
+        ],
+        [
+          "Site_1644.csvx11x00011",
+          1.0
+        ],
+        [
+          "Site_1645.csvx12x00012",
+          1.0
+        ],
+        [
+          "Site_1599.csvx13x00013",
+          1.0
+        ],
+        [
+          "Site_1644.csvx14x00014",
+          1.0
+        ],
+        [
+          "Site_1644.csvx15x00015",
+          1.0
+        ],
+        [
+          "Site_1645.csvx16x00016",
+          1.0
+        ],
+        [
+          "Site_1598.csvx17x00017",
+          1.0
+        ],
+        [
+          "Site_1645.csvx18x00018",
+          1.0
+        ],
+        [
+          "Site_1644.csvx19x00019",
+          1.0
+        ],
+        [
+          "Site_1644.csvx20x00020",
+          1.0
+        ],
+        [
+          "Site_1644.csvx21x00021",
+          1.0
+        ],
+        [
+          "Site_1644.csvx22x00022",
+          1.0
+        ],
+        [
+          "Site_1644.csvx23x00023",
+          1.0
+        ],
+        [
+          "Site_1645.csvx24x00024",
+          1.0
+        ],
+        [
+          "Site_1644.csvx25x00025",
+          1.0
+        ],
+        [
+          "Site_1645.csvx26x00026",
+          1.0
+        ],
+        [
+          "Site_1599.csvx27x00027",
+          1.0
+        ],
+        [
+          "Site_1645.csvx28x00028",
+          1.0
+        ],
+        [
+          "Site_1598.csvx29x00029",
+          1.0
+        ],
+        [
+          "Site_1599.csvx30x00030",
+          1.0
+        ],
+        [
+          "Site_1599.csvx31x00031",
+          1.0
+        ],
+        [
+          "Site_1644.csvx32x00032",
+          1.0
+        ],
+        [
+          "Site_1644.csvx33x00033",
+          1.0
+        ],
+        [
+          "Site_1645.csvx34x00034",
+          1.0
+        ],
+        [
+          "Site_1598.csvx35x00035",
+          1.0
+        ],
+        [
+          "Site_1598.csvx36x00036",
+          1.0
+        ],
+        [
+          "Site_1599.csvx37x00037",
+          1.0
+        ],
+        [
+          "Site_1599.csvx38x00038",
+          1.0
+        ],
+        [
+          "Site_1644.csvx39x00039",
+          1.0
+        ],
+        [
+          "Site_1644.csvx40x00040",
+          1.0
+        ],
+        [
+          "Site_1599.csvx41x00041",
+          1.0
+        ],
+        [
+          "Site_1599.csvx42x00042",
+          1.0
+        ],
+        [
+          "Site_1598.csvx43x00043",
+          1.0
+        ],
+        [
+          "Site_1598.csvx44x00044",
+          1.0
+        ],
+        [
+          "Site_1598.csvx45x00045",
+          1.0
+        ],
+        [
+          "Site_1599.csvx46x00046",
+          1.0
+        ],
+        [
+          "Site_1598.csvx47x00047",
+          1.0
+        ],
+        [
+          "Site_1645.csvx48x00048",
+          1.0
+        ],
+        [
+          "Site_1598.csvx49x00049",
+          1.0
+        ],
+        [
+          "Site_1644.csvx50x00050",
+          1.0
+        ],
+        [
+          "Site_1599.csvx51x00051",
+          1.0
+        ],
+        [
+          "Site_1599.csvx52x00052",
+          1.0
+        ],
+        [
+          "Site_1599.csvx53x00053",
+          1.0
+        ],
+        [
+          "Site_1599.csvx54x00054",
+          1.0
+        ],
+        [
+          "Site_1645.csvx55x00055",
+          1.0
+        ],
+        [
+          "Site_1644.csvx56x00056",
+          1.0
+        ],
+        [
+          "Site_1599.csvx57x00057",
+          1.0
+        ],
+        [
+          "Site_1645.csvx58x00058",
+          1.0
+        ],
+        [
+          "Site_1645.csvx59x00059",
+          1.0
+        ],
+        [
+          "Site_1599.csvx60x00060",
+          1.0
+        ],
+        [
+          "Site_1644.csvx61x00061",
+          1.0
+        ],
+        [
+          "Site_1645.csvx62x00062",
+          1.0
+        ],
+        [
+          "Site_1598.csvx63x00063",
+          1.0
+        ],
+        [
+          "Site_1645.csvx64x00064",
+          1.0
+        ],
+        [
+          "Site_1645.csvx65x00065",
+          1.0
+        ],
+        [
+          "Site_1599.csvx66x00066",
+          1.0
+        ],
+        [
+          "Site_1598.csvx67x00067",
+          1.0
+        ],
+        [
+          "Site_1599.csvx68x00068",
+          1.0
+        ],
+        [
+          "Site_1645.csvx69x00069",
+          1.0
+        ],
+        [
+          "Site_1645.csvx70x00070",
+          1.0
+        ],
+        [
+          "Site_1644.csvx71x00071",
+          1.0
+        ],
+        [
+          "Site_1598.csvx72x00072",
+          1.0
+        ],
+        [
+          "Site_1645.csvx73x00073",
+          1.0
+        ],
+        [
+          "Site_1598.csvx74x00074",
+          1.0
+        ],
+        [
+          "Site_1645.csvx75x00075",
+          1.0
+        ],
+        [
+          "Site_1644.csvx76x00076",
+          1.0
+        ],
+        [
+          "Site_1599.csvx77x00077",
+          1.0
+        ],
+        [
+          "Site_1645.csvx78x00078",
+          1.0
+        ],
+        [
+          "Site_1598.csvx79x00079",
+          1.0
+        ],
+        [
+          "Site_1598.csvx80x00080",
+          1.0
+        ],
+        [
+          "Site_1598.csvx81x00081",
+          1.0
+        ],
+        [
+          "Site_1645.csvx82x00082",
+          1.0
+        ],
+        [
+          "Site_1599.csvx83x00083",
+          1.0
+        ],
+        [
+          "Site_1598.csvx84x00084",
+          1.0
+        ],
+        [
+          "Site_1598.csvx85x00085",
+          1.0
+        ],
+        [
+          "Site_1644.csvx86x00086",
+          1.0
+        ],
+        [
+          "Site_1598.csvx87x00087",
+          1.0
+        ],
+        [
+          "Site_1644.csvx88x00088",
+          1.0
+        ],
+        [
+          "Site_1598.csvx89x00089",
+          1.0
+        ],
+        [
+          "Site_1598.csvx90x00090",
+          1.0
+        ],
+        [
+          "Site_1598.csvx91x00091",
+          1.0
+        ],
+        [
+          "Site_1644.csvx92x00092",
+          1.0
+        ],
+        [
+          "Site_1599.csvx93x00093",
+          1.0
+        ],
+        [
+          "Site_1645.csvx94x00094",
+          1.0
+        ],
+        [
+          "Site_1599.csvx95x00095",
+          1.0
+        ],
+        [
+          "Site_1645.csvx96x00096",
+          1.0
+        ],
+        [
+          "Site_1644.csvx97x00097",
+          1.0
+        ],
+        [
+          "Site_1598.csvx98x00098",
+          1.0
+        ],
+        [
+          "Site_1644.csvx99x00099",
+          1.0
+        ]
+      ],
+      "type": "intensityMeasure"
+    }
+  ]
+}

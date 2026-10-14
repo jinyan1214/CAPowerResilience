@@ -1,0 +1,515 @@
+{
+  "RandomVariables": [],
+  "GeneralInformation": {
+    "AIM_id": "8002",
+    "location": {
+      "latitude": 37.797494,
+      "longitude": -122.434566
+    },
+    "Latitude": 37.797494,
+    "Longitude": -122.434566,
+    "HeightClass": "Low-Rise",
+    "DesignLevel": "Pre-Code",
+    "PlanArea": 6240.0,
+    "NumberOfStories": 1,
+    "YearBuilt": 1906,
+    "ReplacementCost": 657072.0,
+    "StructureType": "S1",
+    "OccupancyClass": "COM1",
+    "Footprint": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-122.435423,37.797220],[-122.433999,37.797367],[-122.434027,37.797532],[-122.434050,37.797529],[-122.434150,37.798131],[-122.434492,37.798095],[-122.434467,37.797941],[-122.434355,37.798012],[-122.434300,37.797676],[-122.434448,37.797634],[-122.434568,37.797494],[-122.434600,37.797685],[-122.434761,37.797498],[-122.434833,37.797570],[-122.434895,37.797563],[-122.434888,37.797519],[-122.435276,37.797479],[-122.435306,37.797661],[-122.435402,37.797651],[-122.435241,37.797837],[-122.435241,37.797837],[-122.435214,37.797676],[-122.435040,37.797582],[-122.434879,37.797599],[-122.435007,37.797668],[-122.434898,37.797796],[-122.435004,37.797853],[-122.434472,37.797908],[-122.434500,37.798074],[-122.435547,37.797966],[-122.435423,37.797220]]]},\"properties\":{}}",
+    "units": {
+      "force": "kips",
+      "length": "ft",
+      "time": "sec"
+    }
+  },
+  "DefaultValues": {
+    "driverFile": "driver",
+    "edpFiles": [
+      "EDP.json"
+    ],
+    "filenameDL": "BIM.json",
+    "filenameEDP": "EDP.json",
+    "filenameEVENT": "EVENT.json",
+    "filenameSAM": "SAM.json",
+    "filenameSIM": "SIM.json",
+    "rvFiles": [
+      "SAM.json",
+      "EVENT.json",
+      "SIM.json"
+    ],
+    "workflowInput": "scInput.json",
+    "workflowOutput": "EDP.json"
+  },
+  "commonFileDir": "/Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/input_data",
+  "remoteAppDir": "/Applications/R2D.app/Contents/MacOS",
+  "localAppDir": "/Applications/R2D.app/Contents/MacOS",
+  "units": {
+    "force": "kips",
+    "length": "ft",
+    "time": "sec"
+  },
+  "outputs": {
+    "AIM": false,
+    "DM": true,
+    "DV": true,
+    "EDP": true,
+    "IM": false
+  },
+  "RegionalEvent": {
+    "eventFile": "EventGrid.csv",
+    "eventFilePath": "/Applications/R2D.app/Contents/MacOS/Examples/E1BasicHAZUS/input_data/San_Andreas_Mw72_filtered",
+    "units": {
+      "PGA": "g"
+    }
+  },
+  "assetType": "Buildings",
+  "Applications": {
+    "Events": [
+      {
+        "Application": "SimCenterEvent",
+        "ApplicationData": {},
+        "EventClassification": "Earthquake"
+      }
+    ],
+    "Modeling": {
+      "Application": "None",
+      "ApplicationData": {}
+    },
+    "Simulation": {
+      "Application": "IMasEDP",
+      "ApplicationData": {}
+    },
+    "UQ": {
+      "Application": "None",
+      "ApplicationData": {}
+    },
+    "DL": {
+      "Application": "Pelicun3",
+      "ApplicationData": {
+        "DL_Method": "Hazus Earthquake - Buildings",
+        "Realizations": 100,
+        "coupled_EDP": true,
+        "detailed_results": false,
+        "ground_failure": false,
+        "lifeline_facility": true,
+        "log_file": true,
+        "regional": "true"
+      }
+    }
+  },
+  "Modeling": {},
+  "Simulation": {
+    "type": "IMasEDP"
+  },
+  "UQ": {},
+  "DL": {},
+  "Events": [
+    {
+      "EventFolderPath": "/Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/input_data",
+      "Events": [
+        [
+          "Site_1237.csvx0x00000",
+          1.0
+        ],
+        [
+          "Site_1237.csvx1x00001",
+          1.0
+        ],
+        [
+          "Site_1237.csvx2x00002",
+          1.0
+        ],
+        [
+          "Site_1236.csvx3x00003",
+          1.0
+        ],
+        [
+          "Site_1283.csvx4x00004",
+          1.0
+        ],
+        [
+          "Site_1237.csvx5x00005",
+          1.0
+        ],
+        [
+          "Site_1237.csvx6x00006",
+          1.0
+        ],
+        [
+          "Site_1236.csvx7x00007",
+          1.0
+        ],
+        [
+          "Site_1237.csvx8x00008",
+          1.0
+        ],
+        [
+          "Site_1236.csvx9x00009",
+          1.0
+        ],
+        [
+          "Site_1283.csvx10x00010",
+          1.0
+        ],
+        [
+          "Site_1283.csvx11x00011",
+          1.0
+        ],
+        [
+          "Site_1283.csvx12x00012",
+          1.0
+        ],
+        [
+          "Site_1282.csvx13x00013",
+          1.0
+        ],
+        [
+          "Site_1282.csvx14x00014",
+          1.0
+        ],
+        [
+          "Site_1283.csvx15x00015",
+          1.0
+        ],
+        [
+          "Site_1283.csvx16x00016",
+          1.0
+        ],
+        [
+          "Site_1282.csvx17x00017",
+          1.0
+        ],
+        [
+          "Site_1283.csvx18x00018",
+          1.0
+        ],
+        [
+          "Site_1282.csvx19x00019",
+          1.0
+        ],
+        [
+          "Site_1283.csvx20x00020",
+          1.0
+        ],
+        [
+          "Site_1283.csvx21x00021",
+          1.0
+        ],
+        [
+          "Site_1282.csvx22x00022",
+          1.0
+        ],
+        [
+          "Site_1237.csvx23x00023",
+          1.0
+        ],
+        [
+          "Site_1283.csvx24x00024",
+          1.0
+        ],
+        [
+          "Site_1283.csvx25x00025",
+          1.0
+        ],
+        [
+          "Site_1236.csvx26x00026",
+          1.0
+        ],
+        [
+          "Site_1236.csvx27x00027",
+          1.0
+        ],
+        [
+          "Site_1237.csvx28x00028",
+          1.0
+        ],
+        [
+          "Site_1282.csvx29x00029",
+          1.0
+        ],
+        [
+          "Site_1237.csvx30x00030",
+          1.0
+        ],
+        [
+          "Site_1282.csvx31x00031",
+          1.0
+        ],
+        [
+          "Site_1237.csvx32x00032",
+          1.0
+        ],
+        [
+          "Site_1237.csvx33x00033",
+          1.0
+        ],
+        [
+          "Site_1237.csvx34x00034",
+          1.0
+        ],
+        [
+          "Site_1283.csvx35x00035",
+          1.0
+        ],
+        [
+          "Site_1237.csvx36x00036",
+          1.0
+        ],
+        [
+          "Site_1283.csvx37x00037",
+          1.0
+        ],
+        [
+          "Site_1237.csvx38x00038",
+          1.0
+        ],
+        [
+          "Site_1283.csvx39x00039",
+          1.0
+        ],
+        [
+          "Site_1283.csvx40x00040",
+          1.0
+        ],
+        [
+          "Site_1283.csvx41x00041",
+          1.0
+        ],
+        [
+          "Site_1282.csvx42x00042",
+          1.0
+        ],
+        [
+          "Site_1236.csvx43x00043",
+          1.0
+        ],
+        [
+          "Site_1237.csvx44x00044",
+          1.0
+        ],
+        [
+          "Site_1283.csvx45x00045",
+          1.0
+        ],
+        [
+          "Site_1237.csvx46x00046",
+          1.0
+        ],
+        [
+          "Site_1283.csvx47x00047",
+          1.0
+        ],
+        [
+          "Site_1237.csvx48x00048",
+          1.0
+        ],
+        [
+          "Site_1283.csvx49x00049",
+          1.0
+        ],
+        [
+          "Site_1283.csvx50x00050",
+          1.0
+        ],
+        [
+          "Site_1236.csvx51x00051",
+          1.0
+        ],
+        [
+          "Site_1283.csvx52x00052",
+          1.0
+        ],
+        [
+          "Site_1236.csvx53x00053",
+          1.0
+        ],
+        [
+          "Site_1237.csvx54x00054",
+          1.0
+        ],
+        [
+          "Site_1283.csvx55x00055",
+          1.0
+        ],
+        [
+          "Site_1236.csvx56x00056",
+          1.0
+        ],
+        [
+          "Site_1237.csvx57x00057",
+          1.0
+        ],
+        [
+          "Site_1283.csvx58x00058",
+          1.0
+        ],
+        [
+          "Site_1237.csvx59x00059",
+          1.0
+        ],
+        [
+          "Site_1237.csvx60x00060",
+          1.0
+        ],
+        [
+          "Site_1283.csvx61x00061",
+          1.0
+        ],
+        [
+          "Site_1237.csvx62x00062",
+          1.0
+        ],
+        [
+          "Site_1283.csvx63x00063",
+          1.0
+        ],
+        [
+          "Site_1283.csvx64x00064",
+          1.0
+        ],
+        [
+          "Site_1236.csvx65x00065",
+          1.0
+        ],
+        [
+          "Site_1237.csvx66x00066",
+          1.0
+        ],
+        [
+          "Site_1237.csvx67x00067",
+          1.0
+        ],
+        [
+          "Site_1236.csvx68x00068",
+          1.0
+        ],
+        [
+          "Site_1236.csvx69x00069",
+          1.0
+        ],
+        [
+          "Site_1236.csvx70x00070",
+          1.0
+        ],
+        [
+          "Site_1236.csvx71x00071",
+          1.0
+        ],
+        [
+          "Site_1236.csvx72x00072",
+          1.0
+        ],
+        [
+          "Site_1282.csvx73x00073",
+          1.0
+        ],
+        [
+          "Site_1282.csvx74x00074",
+          1.0
+        ],
+        [
+          "Site_1236.csvx75x00075",
+          1.0
+        ],
+        [
+          "Site_1236.csvx76x00076",
+          1.0
+        ],
+        [
+          "Site_1237.csvx77x00077",
+          1.0
+        ],
+        [
+          "Site_1283.csvx78x00078",
+          1.0
+        ],
+        [
+          "Site_1236.csvx79x00079",
+          1.0
+        ],
+        [
+          "Site_1282.csvx80x00080",
+          1.0
+        ],
+        [
+          "Site_1237.csvx81x00081",
+          1.0
+        ],
+        [
+          "Site_1283.csvx82x00082",
+          1.0
+        ],
+        [
+          "Site_1282.csvx83x00083",
+          1.0
+        ],
+        [
+          "Site_1282.csvx84x00084",
+          1.0
+        ],
+        [
+          "Site_1237.csvx85x00085",
+          1.0
+        ],
+        [
+          "Site_1283.csvx86x00086",
+          1.0
+        ],
+        [
+          "Site_1282.csvx87x00087",
+          1.0
+        ],
+        [
+          "Site_1282.csvx88x00088",
+          1.0
+        ],
+        [
+          "Site_1237.csvx89x00089",
+          1.0
+        ],
+        [
+          "Site_1236.csvx90x00090",
+          1.0
+        ],
+        [
+          "Site_1236.csvx91x00091",
+          1.0
+        ],
+        [
+          "Site_1237.csvx92x00092",
+          1.0
+        ],
+        [
+          "Site_1237.csvx93x00093",
+          1.0
+        ],
+        [
+          "Site_1283.csvx94x00094",
+          1.0
+        ],
+        [
+          "Site_1283.csvx95x00095",
+          1.0
+        ],
+        [
+          "Site_1236.csvx96x00096",
+          1.0
+        ],
+        [
+          "Site_1283.csvx97x00097",
+          1.0
+        ],
+        [
+          "Site_1283.csvx98x00098",
+          1.0
+        ],
+        [
+          "Site_1236.csvx99x00099",
+          1.0
+        ]
+      ],
+      "type": "intensityMeasure"
+    }
+  ]
+}

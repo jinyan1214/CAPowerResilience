@@ -1,0 +1,171 @@
+
+
+rWHALE workflow
+
+System Information:
+  local time zone: PST
+  start time: 2025-12-06T16:36:37
+  python: 3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:23:25) 
+[Clang 6.0 (clang-600.0.57)]
+  numpy: 1.26.4
+  pandas: 2.2.3
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+16:36:37 Started running the workflow script
+         -----------------------------------------------------------------------
+16:36:37 Inputs provided:
+         workflow input file: /Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/inputRWHALE.json
+         application registry file: /Applications/R2D.app/Contents/MacOS/applications/Workflow/WorkflowApplications.json
+         run type: runningLocal
+         -----------------------------------------------------------------------
+16:36:37 Parsing application registry file
+         Loading the json file...
+           OK
+         Loading default values...
+           OK
+         Collecting application data...
+           OK
+         Successfully parsed application registry
+         -----------------------------------------------------------------------
+16:36:37 Parsing workflow input file
+         Loading the json file...
+           OK
+         The following units were specified: 
+           force: kips
+           length: ft
+           time: sec
+         The following output_types were requested: 
+           DM
+           DV
+           EDP
+         The following workflow defaults were overwritten:
+           driverFile: driver
+           edpFiles: ['EDP.json']
+           filenameDL: BIM.json
+           filenameEDP: EDP.json
+           filenameEVENT: EVENT.json
+           filenameSAM: SAM.json
+           filenameSIM: SIM.json
+           rvFiles: ['SAM.json', 'EVENT.json', 'SIM.json']
+           workflowInput: inputRWHALE.json
+           workflowOutput: EDP.json
+         Run dir : /Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/Results
+         Local applications dir : /Applications/R2D.app/Contents/MacOS
+         Remote applications dir : /Applications/R2D.app/Contents/MacOS
+         Reference dir : /Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/input_data
+         
+         Parsing the requested list of applications...
+         Found asset: Buildings 
+         For Buildings in Assets
+           Registering application CSV_to_AIM 
+         UserInputGM is a passive application (i.e., it does not invoke any calculation within the workflow.
+         For Buildings in RegionalMapping
+           Registering application NearestNeighborEvents 
+         For Buildings in Simulation
+           Registering application IMasEDP 
+         For Buildings in DL
+           Registering application Pelicun3 
+         
+         Requested workflow:
+                Event : SimCenterEvent
+            Assets : 
+                Buildings : CSV_to_AIM
+            RegionalMapping : 
+                Buildings : NearestNeighborEvents
+            Simulation : 
+                Buildings : IMasEDP
+            DL : 
+                Buildings : Pelicun3
+         
+         Successfully parsed workflow inputs
+         -----------------------------------------------------------------------
+16:36:37 Initializing the working directory.
+         Working directory successfully initialized.
+         -----------------------------------------------------------------------
+16:36:37 Creating files for individual assets
+         
+         Creating initial asset information model (AIM) files for Buildings
+
+"/Library/Frameworks/Python.framework/Versions/3.9/bin/python3" "/Applications/R2D.app/Contents/MacOS/applications/createAIM/CSV_to_AIM/CSV_to_AIM.py" "--assetFile" "/Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/Results/Buildings/Buildings8000-8024.json" "--assetSourceFile" "/Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/input_data/SanFrancisco_buildings_ext.csv" "--filter" "8000-8024" "--getRV" 
+
+         AIM files created for Buildings
+         
+Output: 0
+
+
+
+         
+         Asset Information Model (AIM) files successfully created.
+         -----------------------------------------------------------------------
+16:36:37 Augmenting files for individual assets for Workflow
+16:36:37 Appending additional settings to the AIM files...
+         
+         
+         Asset Information Model (AIM) files successfully augmented.
+         -----------------------------------------------------------------------
+16:36:37 Simulating regional event...
+         No Regional Event Application to run.
+         -----------------------------------------------------------------------
+
+16:36:37 Creating regional mapping...
+
+"/Library/Frameworks/Python.framework/Versions/3.9/bin/python3" "/Applications/R2D.app/Contents/MacOS/applications/performRegionalMapping/NearestNeighborEvents/NNE.py" "--assetFile" "/Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/Results/Buildings/Buildings8000-8024.json" "--workflowInput" "inputRWHALE.json" "--filenameEVENTgrid" "/Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/input_data/EventGrid.csv" "--neighbors" "4" "--samples" "100" "--seed" "687" 
+
+Output: 0
+
+
+
+         Regional mapping successfully created.
+         -----------------------------------------------------------------------
+         
+--------------------------------------------------------------------------------
+16:36:44 Buildings id 8000 in file /Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/Results/Buildings/8000-AIM.json
+         -----------------------------------------------------------------------
+
+Starting sWHALE workflow
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+16:36:44 Running the workflow script
+         -----------------------------------------------------------------------
+16:36:44 Initializing the simulation directory
+         
+         Simulation directory successfully initialized.
+         
+         -----------------------------------------------------------------------
+16:36:44 Running preprocessing step random variables
+         
+         Running Event app at preprocessing step...
+
+"/Library/Frameworks/Python.framework/Versions/3.9/bin/python3" "/Applications/R2D.app/Contents/MacOS/applications/createEVENT/SimCenterEvent/SimCenterEvent.py" "--filenameAIM" "/Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/Results/Buildings/8000-AIM.json" "--filenameEVENT" "EVENT.json" "--getRV" 
+
+Output: 0
+
+
+
+         -----------------------------------------------------------------------
+         
+         Running Simulation app at preprocessing step...
+
+"/Library/Frameworks/Python.framework/Versions/3.9/bin/python3" "/Applications/R2D.app/Contents/MacOS/applications/performSIMULATION/IMasEDP/IMasEDP.py" "--filenameAIM" "/Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/Results/Buildings/8000-AIM.json" "--filenameSAM" "SAM.json" "--filenameEVENT" "EVENT.json" "--filenameEDP" "EDP.json" "--filenameSIM" "SIM.json" "--getRV" 
+
+Output: 0
+
+
+
+         -----------------------------------------------------------------------
+16:36:44 No UQ requested, workflow driver is not needed.
+         -----------------------------------------------------------------------
+         Gathering Workflow Inputs.
+16:36:44 No UQ requested, response simulation step is skipped.
+         -----------------------------------------------------------------------
+16:36:44 Running damage and loss assessment
+         Damage and loss assessment command (1):
+
+"/Library/Frameworks/Python.framework/Versions/3.9/bin/python3" "/Applications/R2D.app/Contents/MacOS/applications/performDL/pelicun3/pelicun3_wrapper.py" "--filenameDL" "/Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/Results/Buildings/8000-AIM.json" "--demandFile" "response.csv" "--Realizations" "100" "--coupled_EDP" "True" "--detailed_results" "False" "--ground_failure" "False" "--log_file" "True" "--regional" "true" "--resource_dir" "/Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/Results" "--dirnameOutput" "/Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter/Results/Buildings/8000" 
+
+         -----------------------------------------------------------------------
+16:36:45  ERROR
+16:36:45 return code: 1
+         -----------------------------------------------------------------------
