@@ -1,2 +1,3 @@
 *.DS_Store
 *._*
+/python_libs/pelicun.tar.gz
