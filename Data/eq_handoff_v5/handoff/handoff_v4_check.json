@@ -1,0 +1,61 @@
+{
+  "scenarios": [
+    {
+      "scenario": "bau",
+      "buses_all_byte_identical_to_v3": true,
+      "v4_network_buses_equal_buses_all": true,
+      "n_buses": 8899,
+      "assets_rows": 2863,
+      "asset_key_unique": true,
+      "all_generators_pnom_gt0_included": true,
+      "all_storage_included": true,
+      "assets_in_california": 2690,
+      "assets_outside_footprint": 173,
+      "branches_same_rows_as_v3": true
+    },
+    {
+      "scenario": "conservative",
+      "buses_all_byte_identical_to_v3": true,
+      "v4_network_buses_equal_buses_all": true,
+      "n_buses": 8899,
+      "assets_rows": 2868,
+      "asset_key_unique": true,
+      "all_generators_pnom_gt0_included": true,
+      "all_storage_included": true,
+      "assets_in_california": 2695,
+      "assets_outside_footprint": 173,
+      "branches_same_rows_as_v3": true
+    },
+    {
+      "scenario": "aggressive",
+      "buses_all_byte_identical_to_v3": true,
+      "v4_network_buses_equal_buses_all": true,
+      "n_buses": 8899,
+      "assets_rows": 2895,
+      "asset_key_unique": true,
+      "all_generators_pnom_gt0_included": true,
+      "all_storage_included": true,
+      "assets_in_california": 2722,
+      "assets_outside_footprint": 173,
+      "branches_same_rows_as_v3": true
+    }
+  ],
+  "asset_keys": {
+    "scenarios": [
+      "bau",
+      "conservative",
+      "aggressive"
+    ],
+    "keys_total": 3005,
+    "shared_all": 2773,
+    "shared_some": 75,
+    "scenario_specific": {
+      "bau": 26,
+      "conservative": 29,
+      "aggressive": 102
+    },
+    "mismatched": 0,
+    "mismatched_examples": [],
+    "existing_cats_plants_with_more_than_one_key": 0
+  }
+}

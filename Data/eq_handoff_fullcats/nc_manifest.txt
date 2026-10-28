@@ -1,6 +1,0 @@
-/scratch/users/vdinov/pypsa-usa/workflow/results/networks/step4_scenarios/elec_expanded_bau_macro_fullyear.nc
-/scratch/users/vdinov/pypsa-usa/workflow/results/networks/step4_scenarios/cats_disagg_bau_fullcats_fullyear.nc
-/scratch/users/vdinov/pypsa-usa/workflow/results/networks/step4_scenarios/elec_expanded_conservative_macro_fullyear.nc
-/scratch/users/vdinov/pypsa-usa/workflow/results/networks/step4_scenarios/cats_disagg_conservative_fullcats_fullyear.nc
-/scratch/users/vdinov/pypsa-usa/workflow/results/networks/step4_scenarios/elec_expanded_aggressive_macro_fullyear.nc
-/scratch/users/vdinov/pypsa-usa/workflow/results/networks/step4_scenarios/cats_disagg_aggressive_fullcats_fullyear.nc

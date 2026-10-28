@@ -1,0 +1,3 @@
+carrier,damage_category,in_california,n_units,total_power_mw,new_power_mw,total_energy_mwh,scenario
+battery,battery_storage,False,15,7839.1,0.0,27778.6,bau
+battery,battery_storage,True,187,13860.9,0.0,47864.9,bau

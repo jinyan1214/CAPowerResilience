@@ -1,0 +1,4 @@
+carrier,damage_category,in_california,n_units,total_power_mw,new_power_mw,total_energy_mwh,scenario
+8hr_battery_storage,battery_storage,True,82,2542.257990565886,2542.257990565886,20338.063924527087,aggressive
+battery,battery_storage,False,15,7839.1,0.0,27778.6,aggressive
+battery,battery_storage,True,187,13860.899999999998,0.0,47864.899999999994,aggressive

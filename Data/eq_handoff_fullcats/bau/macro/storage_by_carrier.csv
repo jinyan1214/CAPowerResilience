@@ -1,4 +1,0 @@
-carrier,damage_category,n_units,total_power_mw,new_power_mw,n_new,new_energy_mwh,scenario
-4hr_battery_storage,battery_storage,99,1.991826733822154e-06,1.991826733822154e-06,0,0.0,bau
-8hr_battery_storage,battery_storage,99,1.4795951245232102e-06,1.4795951245232102e-06,0,0.0,bau
-battery,battery_storage,18,21700.0,0.0,0,0.0,bau
