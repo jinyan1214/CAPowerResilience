@@ -2,16 +2,16 @@
 pelicun 0.0.0-local | 
 
 System Information:
-         local time zone: PDT
-         start time: 2026-10-28T14:29:19
+         local time zone: PST
+         start time: 2026-11-03T15:35:44
          python: 3.11.6 (main, Mar 25 2024, 15:30:58) [GCC 13.2.0]
          numpy: 2.3.3
          pandas: 2.3.3
          
          --------------------------------------------------------------------------------
-14:29:19 Assessment Started
+15:35:44 Assessment Started
          --------------------------------------------------------------------------------
-14:29:19 Loading demand data...
+15:35:44 Loading demand data...
          Converting units...
          Unit conversion successful.
          Removing whitespace from header...
@@ -19,7 +19,7 @@ System Information:
          Removing whitespace from header...
          Demand units successfully parsed.
          --------------------------------------------------------------------------------
-14:29:19 Calibrating demand model...
+15:35:44 Calibrating demand model...
          --------------------------------------------------------------------------------
          Preparing data ...
          Converting units...
@@ -28,19 +28,19 @@ System Information:
          Calibration settings successfully parsed:
                            Family  CensorLower  CensorUpper  TruncateLower  TruncateUpper  SigIncrease  Theta_0  Theta_1
          type loc  dir                                                                                                  
-         PGA  8000 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
-              8001 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
-              8002 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
-              8003 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
-              8004 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+         PGA  1000 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              1001 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              1002 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              1003 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              1004 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
          ...                  ...          ...          ...            ...            ...          ...      ...      ...
-              8894 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
-              8895 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
-              8896 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
-              8897 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
-              8898 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              1995 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              1996 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              1997 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              1998 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              1999 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
          
-         [899 rows x 8 columns]
+         [1000 rows x 8 columns]
          
          Demand data used for calibration:
          Empty DataFrame
@@ -56,86 +56,126 @@ System Information:
          Calibrated demand model marginal distributions:
                            Family  Theta_0  Theta_1  TruncateLower  TruncateUpper
          type loc  dir                                                           
-         PGA  8000 1    empirical      NaN      NaN            NaN            NaN
-              8001 1    empirical      NaN      NaN            NaN            NaN
-              8002 1    empirical      NaN      NaN            NaN            NaN
-              8003 1    empirical      NaN      NaN            NaN            NaN
-              8004 1    empirical      NaN      NaN            NaN            NaN
+         PGA  1000 1    empirical      NaN      NaN            NaN            NaN
+              1001 1    empirical      NaN      NaN            NaN            NaN
+              1002 1    empirical      NaN      NaN            NaN            NaN
+              1003 1    empirical      NaN      NaN            NaN            NaN
+              1004 1    empirical      NaN      NaN            NaN            NaN
          ...                  ...      ...      ...            ...            ...
-              8894 1    empirical      NaN      NaN            NaN            NaN
-              8895 1    empirical      NaN      NaN            NaN            NaN
-              8896 1    empirical      NaN      NaN            NaN            NaN
-              8897 1    empirical      NaN      NaN            NaN            NaN
-              8898 1    empirical      NaN      NaN            NaN            NaN
+              1995 1    empirical      NaN      NaN            NaN            NaN
+              1996 1    empirical      NaN      NaN            NaN            NaN
+              1997 1    empirical      NaN      NaN            NaN            NaN
+              1998 1    empirical      NaN      NaN            NaN            NaN
+              1999 1    empirical      NaN      NaN            NaN            NaN
          
-         [899 rows x 5 columns]
+         [1000 rows x 5 columns]
          
          Calibrated demand model correlation matrix:
          Empty DataFrame
          Columns: []
          Index: []
          --------------------------------------------------------------------------------
-14:29:19 Generating sample from demand variables...
+15:35:45 Generating sample from demand variables...
          
-         899 random variables created.
+         1000 random variables created.
          
          Correlations between 0 random variables successfully defined.
          
          Successfully generated 1024 realizations.
          --------------------------------------------------------------------------------
-14:29:20 Loading component model...
+15:35:45 Loading component model...
          Unit conversion successful.
-         Model parameters successfully parsed. 899 performance groups identified
+         Model parameters successfully parsed. 1000 performance groups identified
          Converting model parameters to internal units...
-         Model parameters successfully loaded.
+15:35:47 Unhandled exception occurred:
+         Traceback (most recent call last):
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/Analysis/EarthquakeScenarios/../../python_libs/pelicun_cli.py", line 208, in <module>
+             main()
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/Analysis/EarthquakeScenarios/../../python_libs/pelicun_cli.py", line 193, in main
+             args.func(config_file=args.config_file, num_cores=args.num_cores)
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/python_libs/pelicun/pelicun/tools/regional_sim.py", line 1046, in regional_sim
+             process_and_save_chunk(
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/python_libs/pelicun/pelicun/tools/regional_sim.py", line 791, in process_and_save_chunk
+             process_buildings_chunk(
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/python_libs/pelicun/pelicun/tools/regional_sim.py", line 641, in process_buildings_chunk
+             assessment.asset.load_cmp_model({'marginals': cmp_marginals})
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/python_libs/pelicun/pelicun/model/asset_model.py", line 416, in load_cmp_model
+             cmp_marginal_params = self._convert_marginal_params(
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/python_libs/pelicun/pelicun/model/pelicun_model.py", line 233, in _convert_marginal_params
+             theta, tr_limits = uq.scale_distribution(  # type: ignore
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/python_libs/pelicun/pelicun/uq.py", line 112, in scale_distribution
+             truncation_limits *= scale_factor
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/generic.py", line 12794, in __imul__
+             return self._inplace_method(other, type(self).__mul__)  # type: ignore[operator]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/generic.py", line 12754, in _inplace_method
+             result = op(self, other)
+                      ^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/ops/common.py", line 76, in new_method
+             return method(self, other)
+                    ^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/arraylike.py", line 202, in __mul__
+             return self._arith_method(other, operator.mul)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/series.py", line 6154, in _arith_method
+             return base.IndexOpsMixin._arith_method(self, other, op)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/base.py", line 1393, in _arith_method
+             return self._construct_result(result, name=res_name)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/series.py", line 6252, in _construct_result
+             out = self._constructor(result, index=self.index, dtype=dtype, copy=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/series.py", line 392, in __init__
+             def __init__(
+             
+         KeyboardInterrupt
          
-         Component model marginal distributions:
-                                Theta_0  Blocks Units
-         cmp      loc  dir uid                       
-         EP.S.H.A 8024 1   0        1.0       1    ea
-                  8070 1   0        1.0       1    ea
-                  8077 1   0        1.0       1    ea
-                  8099 1   0        1.0       1    ea
-                  8157 1   0        1.0       1    ea
-         ...                        ...     ...   ...
-         EP.S.M.A 8894 1   0        1.0       1    ea
-                  8895 1   0        1.0       1    ea
-                  8896 1   0        1.0       1    ea
-                  8897 1   0        1.0       1    ea
-                  8898 1   0        1.0       1    ea
+15:35:47 Unhandled exception occurred:
+         Traceback (most recent call last):
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/Analysis/EarthquakeScenarios/../../python_libs/pelicun_cli.py", line 208, in <module>
+             main()
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/Analysis/EarthquakeScenarios/../../python_libs/pelicun_cli.py", line 193, in main
+             args.func(config_file=args.config_file, num_cores=args.num_cores)
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/python_libs/pelicun/pelicun/tools/regional_sim.py", line 1046, in regional_sim
+             process_and_save_chunk(
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/python_libs/pelicun/pelicun/tools/regional_sim.py", line 791, in process_and_save_chunk
+             process_buildings_chunk(
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/python_libs/pelicun/pelicun/tools/regional_sim.py", line 641, in process_buildings_chunk
+             assessment.asset.load_cmp_model({'marginals': cmp_marginals})
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/python_libs/pelicun/pelicun/model/asset_model.py", line 416, in load_cmp_model
+             cmp_marginal_params = self._convert_marginal_params(
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/python_libs/pelicun/pelicun/model/pelicun_model.py", line 233, in _convert_marginal_params
+             theta, tr_limits = uq.scale_distribution(  # type: ignore
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/python_libs/pelicun/pelicun/uq.py", line 112, in scale_distribution
+             truncation_limits *= scale_factor
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/generic.py", line 12794, in __imul__
+             return self._inplace_method(other, type(self).__mul__)  # type: ignore[operator]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/generic.py", line 12754, in _inplace_method
+             result = op(self, other)
+                      ^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/ops/common.py", line 76, in new_method
+             return method(self, other)
+                    ^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/arraylike.py", line 202, in __mul__
+             return self._arith_method(other, operator.mul)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/series.py", line 6154, in _arith_method
+             return base.IndexOpsMixin._arith_method(self, other, op)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/base.py", line 1393, in _arith_method
+             return self._construct_result(result, name=res_name)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/series.py", line 6252, in _construct_result
+             out = self._constructor(result, index=self.index, dtype=dtype, copy=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/resnick/groups/enceladus/jyzhao/CAPowerResilience/.venv_pelicun/lib/python3.11/site-packages/pandas/core/series.py", line 392, in __init__
+             def __init__(
+             
+         KeyboardInterrupt
          
-         [899 rows x 3 columns]
-         --------------------------------------------------------------------------------
-14:29:23 Generating sample from component quantity variables...
-         
-         899 random variables created.
-         
-         Successfully generated 1024 realizations.
-         --------------------------------------------------------------------------------
-         Loading damage model...
-         Damage model parameters loaded successfully.
-         Removing unused damage model parameters.
-         Converting damage model parameter units.
-         Checking damage model parameter availability for all components in the asset model.
-         --------------------------------------------------------------------------------
-14:29:24 Calculating damages...
-         Number of Performance Groups in Asset Model: 899
-         Number of Component Blocks: 899
-         1 batches of Performance Groups prepared for damage assessment
-14:29:24 Calculating damage states for PG batch 1 with 899 blocks
-14:29:24 Generating capacity variables ...
-         2x3596 random variables created.
-14:29:25 Sampling capacities...
-14:29:27 Raw samples are available
-14:29:27 Successfully generated 1024 realizations.
-14:29:27 Collecting required demand information...
-14:29:27 Assembling demand data for calculation...
-14:29:29 Evaluating damage states...
-         Damage state calculation successful.
-14:29:36 Calculating damage quantities...
-         Damage calculation completed.
-         --------------------------------------------------------------------------------
-14:29:37 Saving damage sample...
-         Preparing data ...
-         Converting units...
-         Unit conversion successful.
