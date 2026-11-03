@@ -3,5 +3,8 @@
 .venv/
 .venv_pelicun/
 .vscode/
-Data/BSSC2014_scenarios/
+Data/BSSC2014_scenarios/*.tar.gz
 /python_libs/pelicun.tar.gz
+*archive/
+Analysis/EarthquakeScenarios/archive/
+*__pycache__/

@@ -1,0 +1,141 @@
+
+pelicun 0.0.0-local | 
+
+System Information:
+         local time zone: PDT
+         start time: 2026-10-28T14:43:21
+         python: 3.11.6 (main, Mar 25 2024, 15:30:58) [GCC 13.2.0]
+         numpy: 2.3.3
+         pandas: 2.3.3
+         
+         --------------------------------------------------------------------------------
+14:43:21 Assessment Started
+         --------------------------------------------------------------------------------
+14:43:21 Loading demand data...
+         Converting units...
+         Unit conversion successful.
+         Removing whitespace from header...
+         Demand data successfully parsed.
+         Removing whitespace from header...
+         Demand units successfully parsed.
+         --------------------------------------------------------------------------------
+14:43:22 Calibrating demand model...
+         --------------------------------------------------------------------------------
+         Preparing data ...
+         Converting units...
+         Unit conversion successful.
+         
+         Calibration settings successfully parsed:
+                            Family  CensorLower  CensorUpper  TruncateLower  TruncateUpper  SigIncrease  Theta_0  Theta_1
+         type loc   dir                                                                                                  
+         PGA  11000 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              11001 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              11002 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              11003 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              11004 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+         ...                   ...          ...          ...            ...            ...          ...      ...      ...
+              11789 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              11790 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              11791 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              11792 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              11793 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+         
+         [794 rows x 8 columns]
+         
+         Demand data used for calibration:
+         Empty DataFrame
+         Columns: []
+         Index: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+         
+         [32 rows x 0 columns]
+         
+         Fitting the prescribed joint demand distribution...
+         
+         Calibration successful, processing results...
+         
+         Calibrated demand model marginal distributions:
+                            Family  Theta_0  Theta_1  TruncateLower  TruncateUpper
+         type loc   dir                                                           
+         PGA  11000 1    empirical      NaN      NaN            NaN            NaN
+              11001 1    empirical      NaN      NaN            NaN            NaN
+              11002 1    empirical      NaN      NaN            NaN            NaN
+              11003 1    empirical      NaN      NaN            NaN            NaN
+              11004 1    empirical      NaN      NaN            NaN            NaN
+         ...                   ...      ...      ...            ...            ...
+              11789 1    empirical      NaN      NaN            NaN            NaN
+              11790 1    empirical      NaN      NaN            NaN            NaN
+              11791 1    empirical      NaN      NaN            NaN            NaN
+              11792 1    empirical      NaN      NaN            NaN            NaN
+              11793 1    empirical      NaN      NaN            NaN            NaN
+         
+         [794 rows x 5 columns]
+         
+         Calibrated demand model correlation matrix:
+         Empty DataFrame
+         Columns: []
+         Index: []
+         --------------------------------------------------------------------------------
+14:43:22 Generating sample from demand variables...
+         
+         794 random variables created.
+         
+         Correlations between 0 random variables successfully defined.
+         
+         Successfully generated 1024 realizations.
+         --------------------------------------------------------------------------------
+14:43:22 Loading component model...
+         Unit conversion successful.
+         Model parameters successfully parsed. 794 performance groups identified
+         Converting model parameters to internal units...
+         Model parameters successfully loaded.
+         
+         Component model marginal distributions:
+                                  Theta_0  Blocks Units
+         cmp       loc   dir uid                       
+         EP.G.ML.A 11195 1   0        1.0       1    ea
+                   11352 1   0        1.0       1    ea
+                   11353 1   0        1.0       1    ea
+                   11355 1   0        1.0       1    ea
+                   11357 1   0        1.0       1    ea
+         ...                          ...     ...   ...
+         EP.G.S.A  11783 1   0        1.0       1    ea
+                   11786 1   0        1.0       1    ea
+                   11788 1   0        1.0       1    ea
+                   11790 1   0        1.0       1    ea
+                   11793 1   0        1.0       1    ea
+         
+         [794 rows x 3 columns]
+         --------------------------------------------------------------------------------
+14:43:25 Generating sample from component quantity variables...
+         
+         794 random variables created.
+         
+         Successfully generated 1024 realizations.
+         --------------------------------------------------------------------------------
+         Loading damage model...
+         Damage model parameters loaded successfully.
+         Removing unused damage model parameters.
+         Converting damage model parameter units.
+         Checking damage model parameter availability for all components in the asset model.
+         --------------------------------------------------------------------------------
+14:43:26 Calculating damages...
+         Number of Performance Groups in Asset Model: 794
+         Number of Component Blocks: 794
+         1 batches of Performance Groups prepared for damage assessment
+14:43:26 Calculating damage states for PG batch 1 with 794 blocks
+14:43:26 Generating capacity variables ...
+         2x3176 random variables created.
+14:43:27 Sampling capacities...
+14:43:28 Raw samples are available
+14:43:28 Successfully generated 1024 realizations.
+14:43:28 Collecting required demand information...
+14:43:29 Assembling demand data for calculation...
+14:43:30 Evaluating damage states...
+         Damage state calculation successful.
+14:43:37 Calculating damage quantities...
+         Damage calculation completed.
+         --------------------------------------------------------------------------------
+14:43:37 Saving damage sample...
+         Preparing data ...
+         Converting units...
+         Unit conversion successful.
