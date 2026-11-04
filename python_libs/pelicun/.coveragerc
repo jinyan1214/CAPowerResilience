@@ -1,0 +1,6 @@
+[run]
+omit =
+    */tests/*
+    */resources/*
+    */tools/NNR.py
+[report]
