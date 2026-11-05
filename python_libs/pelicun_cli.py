@@ -39,7 +39,10 @@
 from __future__ import annotations
 
 import sys
-sys.path.append('/resnick/groups/enceladus/jyzhao/CAPowerResilience/python_libs/pelicun')
+import os
+cur_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(
+    os.path.join(cur_dir, "pelicun"))
 
 import argparse
 import logging

@@ -8,3 +8,4 @@ Data/BSSC2014_scenarios/*.tar.gz
 *archive/
 Analysis/EarthquakeScenarios/archive/
 *__pycache__/
+python_libs/pelicun_compressed.tar.gz

@@ -2,16 +2,16 @@
 pelicun 0.0.0-local | 
 
 System Information:
-         local time zone: PDT
-         start time: 2026-10-28T13:46:31
+         local time zone: PST
+         start time: 2026-11-04T13:40:51
          python: 3.11.6 (main, Mar 25 2024, 15:30:58) [GCC 13.2.0]
          numpy: 2.3.3
          pandas: 2.3.3
          
          --------------------------------------------------------------------------------
-13:46:31 Assessment Started
+13:40:51 Assessment Started
          --------------------------------------------------------------------------------
-13:46:31 Loading demand data...
+13:40:51 Loading demand data...
          Converting units...
          Unit conversion successful.
          Removing whitespace from header...
@@ -19,7 +19,7 @@ System Information:
          Removing whitespace from header...
          Demand units successfully parsed.
          --------------------------------------------------------------------------------
-13:46:31 Calibrating demand model...
+13:40:52 Calibrating demand model...
          --------------------------------------------------------------------------------
          Preparing data ...
          Converting units...
@@ -34,13 +34,13 @@ System Information:
               11003 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
               11004 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
          ...                   ...          ...          ...            ...            ...          ...      ...      ...
-              11762 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
-              11763 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
-              11764 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
-              11765 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
-              11766 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              11989 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              11990 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              11991 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              11992 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
+              11993 1    empirical          NaN          NaN            NaN            NaN          NaN      NaN      NaN
          
-         [767 rows x 8 columns]
+         [994 rows x 8 columns]
          
          Demand data used for calibration:
          Empty DataFrame
@@ -62,53 +62,53 @@ System Information:
               11003 1    empirical      NaN      NaN            NaN            NaN
               11004 1    empirical      NaN      NaN            NaN            NaN
          ...                   ...      ...      ...            ...            ...
-              11762 1    empirical      NaN      NaN            NaN            NaN
-              11763 1    empirical      NaN      NaN            NaN            NaN
-              11764 1    empirical      NaN      NaN            NaN            NaN
-              11765 1    empirical      NaN      NaN            NaN            NaN
-              11766 1    empirical      NaN      NaN            NaN            NaN
+              11989 1    empirical      NaN      NaN            NaN            NaN
+              11990 1    empirical      NaN      NaN            NaN            NaN
+              11991 1    empirical      NaN      NaN            NaN            NaN
+              11992 1    empirical      NaN      NaN            NaN            NaN
+              11993 1    empirical      NaN      NaN            NaN            NaN
          
-         [767 rows x 5 columns]
+         [994 rows x 5 columns]
          
          Calibrated demand model correlation matrix:
          Empty DataFrame
          Columns: []
          Index: []
          --------------------------------------------------------------------------------
-13:46:31 Generating sample from demand variables...
+13:40:52 Generating sample from demand variables...
          
-         767 random variables created.
+         994 random variables created.
          
          Correlations between 0 random variables successfully defined.
          
          Successfully generated 1024 realizations.
          --------------------------------------------------------------------------------
-13:46:32 Loading component model...
+13:40:52 Loading component model...
          Unit conversion successful.
-         Model parameters successfully parsed. 767 performance groups identified
+         Model parameters successfully parsed. 994 performance groups identified
          Converting model parameters to internal units...
          Model parameters successfully loaded.
          
          Component model marginal distributions:
                                   Theta_0  Blocks Units
          cmp       loc   dir uid                       
-         EP.G.ML.A 11205 1   0        1.0       1    ea
+         EP.G.ML.A 11004 1   0        1.0       1    ea
                    11210 1   0        1.0       1    ea
-                   11211 1   0        1.0       1    ea
-                   11213 1   0        1.0       1    ea
-                   11214 1   0        1.0       1    ea
+                   11215 1   0        1.0       1    ea
+                   11216 1   0        1.0       1    ea
+                   11218 1   0        1.0       1    ea
          ...                          ...     ...   ...
-         EP.G.S.A  11756 1   0        1.0       1    ea
-                   11759 1   0        1.0       1    ea
-                   11761 1   0        1.0       1    ea
-                   11763 1   0        1.0       1    ea
-                   11766 1   0        1.0       1    ea
+         EP.G.S.A  11989 1   0        1.0       1    ea
+                   11990 1   0        1.0       1    ea
+                   11991 1   0        1.0       1    ea
+                   11992 1   0        1.0       1    ea
+                   11993 1   0        1.0       1    ea
          
-         [767 rows x 3 columns]
+         [994 rows x 3 columns]
          --------------------------------------------------------------------------------
-13:46:35 Generating sample from component quantity variables...
+13:40:55 Generating sample from component quantity variables...
          
-         767 random variables created.
+         994 random variables created.
          
          Successfully generated 1024 realizations.
          --------------------------------------------------------------------------------
@@ -118,24 +118,24 @@ System Information:
          Converting damage model parameter units.
          Checking damage model parameter availability for all components in the asset model.
          --------------------------------------------------------------------------------
-13:46:35 Calculating damages...
-         Number of Performance Groups in Asset Model: 767
-         Number of Component Blocks: 767
+13:40:56 Calculating damages...
+         Number of Performance Groups in Asset Model: 994
+         Number of Component Blocks: 994
          1 batches of Performance Groups prepared for damage assessment
-13:46:35 Calculating damage states for PG batch 1 with 767 blocks
-13:46:35 Generating capacity variables ...
-         2x3068 random variables created.
-13:46:36 Sampling capacities...
-13:46:37 Raw samples are available
-13:46:37 Successfully generated 1024 realizations.
-13:46:37 Collecting required demand information...
-13:46:38 Assembling demand data for calculation...
-13:46:39 Evaluating damage states...
+13:40:56 Calculating damage states for PG batch 1 with 994 blocks
+13:40:56 Generating capacity variables ...
+         2x3976 random variables created.
+13:40:57 Sampling capacities...
+13:40:58 Raw samples are available
+13:40:58 Successfully generated 1024 realizations.
+13:40:58 Collecting required demand information...
+13:40:58 Assembling demand data for calculation...
+13:40:59 Evaluating damage states...
          Damage state calculation successful.
-13:46:45 Calculating damage quantities...
+13:41:04 Calculating damage quantities...
          Damage calculation completed.
          --------------------------------------------------------------------------------
-13:46:46 Saving damage sample...
+13:41:05 Saving damage sample...
          Preparing data ...
          Converting units...
          Unit conversion successful.

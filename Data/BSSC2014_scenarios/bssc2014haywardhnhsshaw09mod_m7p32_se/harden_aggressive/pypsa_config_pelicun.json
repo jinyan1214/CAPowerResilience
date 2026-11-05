@@ -1,0 +1,161 @@
+{
+    "Applications": {
+        "Assets": {
+            "Buildings": {
+                "Application": "CSV_to_AIM",
+                "ApplicationData": {
+                    "assetSourceFile": "asset_info_pelicun.csv",
+                    "inputIsGIS": false,
+                    "pathToSource": "/resnick/groups/enceladus/jyzhao/CAPowerResilience/Analysis/EarthquakeScenarios/../../Data/BSSC2014_scenarios/bssc2014haywardhnhsshaw09mod_m7p32_se/harden_aggressive"
+                }
+            }
+        },
+        "DL": {
+            "Buildings": {
+                "Application": "Pelicun3",
+                "ApplicationData": {
+                    "DL_Method": "Hazus Earthquake - Electric Power",
+                    "Realizations": 1024,
+                    "coupled_EDP": true,
+                    "detailed_results": false,
+                    "ground_failure": false,
+                    "lifeline_facility": true,
+                    "log_file": true,
+                    "regional": "true"
+                }
+            }
+        },
+        "Events": [
+            {
+                "Application": "SimCenterEvent",
+                "ApplicationData": {},
+                "EventClassification": "Earthquake"
+            }
+        ],
+        "Modeling": {
+            "Buildings": {
+                "Application": "None",
+                "ApplicationData": {}
+            }
+        },
+        "Recovery": {
+            "Application": "None",
+            "ApplicationData": {}
+        },
+        "RegionalEvent": {
+            "Application": "UserInputGM",
+            "ApplicationData": {}
+        },
+        "RegionalMapping": {
+            "Buildings": {
+                "Application": "UserDefinedDemandSample",
+                "ApplicationData": {
+                    "neighbors": 4,
+                    "samples": 100,
+                    "seed": 687
+                }
+            }
+        },
+        "Simulation": {
+            "Buildings": {
+                "Application": "IMasEDP",
+                "ApplicationData": {}
+            }
+        },
+        "SystemPerformance": {
+            "Buildings": {
+                "Application": "None",
+                "ApplicationData": {}
+            }
+        },
+        "UQ": {
+            "Buildings": {
+                "Application": "None",
+                "ApplicationData": {}
+            }
+        }
+    },
+    "Assets": {
+        "Buildings": {}
+    },
+    "Author": "SimCenter",
+    "DL": {
+        "Buildings": {}
+    },
+    "DefaultValues": {
+        "driverFile": "driver",
+        "edpFiles": [
+            "EDP.json"
+        ],
+        "filenameDL": "BIM.json",
+        "filenameEDP": "EDP.json",
+        "filenameEVENT": "EVENT.json",
+        "filenameSAM": "SAM.json",
+        "filenameSIM": "SIM.json",
+        "rvFiles": [
+            "SAM.json",
+            "EVENT.json",
+            "SIM.json"
+        ],
+        "workflowInput": "scInput.json",
+        "workflowOutput": "EDP.json"
+    },
+    "Modeling": {
+        "Buildings": {}
+    },
+    "Name": "E1 - HAZUS",
+    "Recovery": {},
+    "RegionalEvent": {
+        "eventFile": "pga_samples.csv",
+        "eventFilePath": "/resnick/groups/enceladus/jyzhao/CAPowerResilience/Analysis/EarthquakeScenarios/../../Data/BSSC2014_scenarios/bssc2014haywardhnhsshaw09mod_m7p32_se/harden_aggressive",
+        "units": {
+            "PGA": "g"
+        }
+    },
+    "RegionalMapping": {
+        "Buildings": {}
+    },
+    "Simulation": {
+        "Buildings": {
+            "type": "IMasEDP"
+        }
+    },
+    "SystemPerformance": {
+        "Buildings": {}
+    },
+    "UQ": {
+        "Buildings": {}
+    },
+    "WorkflowType": "Regional Simulation",
+    "assets": {
+        "buildings": true,
+        "power": false,
+        "soil": false,
+        "transportation": false,
+        "water": false
+    },
+    "commonFileDir": "input_data",
+    "localAppDir": "/Applications/R2D.app/Contents/MacOS",
+    "outputs": {
+        "AIM": false,
+        "DM": true,
+        "DV": true,
+        "EDP": true,
+        "IM": false
+    },
+    "randomVariables": [],
+    "remoteAppDir": "/Applications/R2D.app/Contents/MacOS",
+    "runDir": "/Users/jinyanzhao/Documents/R2D/LocalWorkDir/tmp.SimCenter",
+    "runType": "runningLocal",
+    "type": "Earthquake",
+    "units": {
+        "force": "kips",
+        "length": "ft",
+        "time": "sec"
+    },
+    "workingDir": "/Users/jinyanzhao/Documents/R2D/LocalWorkDir",
+    "SaveVariables": [
+        "Demand",
+        "Damage"
+    ]
+}

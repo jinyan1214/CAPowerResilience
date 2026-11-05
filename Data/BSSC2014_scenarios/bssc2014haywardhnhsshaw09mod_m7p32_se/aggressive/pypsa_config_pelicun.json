@@ -6,7 +6,7 @@
                 "ApplicationData": {
                     "assetSourceFile": "asset_info_pelicun.csv",
                     "inputIsGIS": false,
-                    "pathToSource": "/resnick/groups/enceladus/jyzhao/CAPowerResilience/Data/BSSC2014_scenarios/bssc2014haywardhnhsshaw09mod_m7p32_se/aggressive"
+                    "pathToSource": "/resnick/groups/enceladus/jyzhao/CAPowerResilience/Analysis/EarthquakeScenarios/../../Data/BSSC2014_scenarios/bssc2014haywardhnhsshaw09mod_m7p32_se/aggressive"
                 }
             }
         },
@@ -107,7 +107,7 @@
     "Recovery": {},
     "RegionalEvent": {
         "eventFile": "pga_samples.csv",
-        "eventFilePath": "/resnick/groups/enceladus/jyzhao/CAPowerResilience/Data/BSSC2014_scenarios/bssc2014haywardhnhsshaw09mod_m7p32_se/aggressive",
+        "eventFilePath": "/resnick/groups/enceladus/jyzhao/CAPowerResilience/Analysis/EarthquakeScenarios/../../Data/BSSC2014_scenarios/bssc2014haywardhnhsshaw09mod_m7p32_se/aggressive",
         "units": {
             "PGA": "g"
         }
